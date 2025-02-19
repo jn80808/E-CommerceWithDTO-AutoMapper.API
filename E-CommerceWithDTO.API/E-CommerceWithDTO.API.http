@@ -1,0 +1,236 @@
+﻿@E-CommerceWithDTO.API_HostAddress = https://localhost:7228
+
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/product
+
+###
+
+
+
+POST {{E-CommerceWithDTO.API_HostAddress}}/api/product
+Content-Type: application/json
+
+{
+  
+  "name": "MATH ",
+  "description": "Comprehensive guide  linear algebra, and differential equations.",
+  "price":4000.99,
+  "stockQuantity": 75,
+  "productCategories": [
+    { "categoryId": 2 }
+  ]
+}
+
+###
+
+
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/product/7
+Content-Type: application/json
+
+{
+    "id":7,
+    "name": "Joy 8 Gonzaga",
+    "description": "Latest model smartphone",
+    "price": 699.99,
+    "stockQuantity": 50,
+     "productCategories": [
+      { "categoryId": 2 }
+    ]
+}
+
+###
+
+
+
+DELETE {{E-CommerceWithDTO.API_HostAddress}}/api/product/7
+
+###
+
+
+
+
+
+
+
+
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/category
+
+###
+
+POST {{E-CommerceWithDTO.API_HostAddress}}/api/category
+Content-Type: application/json
+
+{
+  "name": "Health & Beauty",
+  "description": "Skincare, cosmetics, and wellness products"
+}
+
+
+###
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/category/06
+Content-Type: application/json
+
+{
+  "name": "Health ",
+  "description": "Skincare, cosmetics, and wellness products"
+}
+
+###
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/category/6
+Content-Type: application/json
+
+{
+  "name": "",
+  "description": "Skincare, cosmetics, and wellness products"
+}
+
+###
+
+
+
+
+DELETE {{E-CommerceWithDTO.API_HostAddress}}/api/category/6
+
+###
+
+  
+  
+  
+  
+  
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/orderitem
+
+###
+
+
+POST {{E-CommerceWithDTO.API_HostAddress}}/api/order
+Content-Type: application/json
+
+{
+  "customerName": "Joy Ng",
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 2,
+      "unitPrice": 25.00
+    },
+    {
+      "productId": 2,
+      "quantity": 1,
+      "unitPrice": 50.00
+    }
+  ]
+}
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/product/3
+
+###
+
+
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/product/11
+Content-Type: application/json
+
+{
+  "id": 111,
+  "name": "Advance Math",
+  "description": "Comprehensive guide covering calculus, linear algebra, and differential equations.",
+  "price": 4000.99,
+  "stockQuantity": 75,
+  "productCategories": [
+    { "categoryId": 2 }
+  ]
+}
+
+
+###
+
+DELETE {{E-CommerceWithDTO.API_HostAddress}}/api/product/11
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/category
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/category/2
+
+###
+
+POST {{E-CommerceWithDTO.API_HostAddress}}/api/category
+Content-Type: application/json
+
+{
+    "name": "Health",
+    "description": "wellness products"
+}
+
+###
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/category/7
+Content-Type: application/json
+
+{
+    "id": 7,
+    "name": "Beauty & Health",
+    "description": "personal care and wellness products"
+}
+
+###
+
+DELETE {{E-CommerceWithDTO.API_HostAddress}}/api/category/7
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/order
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/order/3
+
+###
+
+
+
+PUT {{E-CommerceWithDTO.API_HostAddress}}/api/order/14
+Content-Type: application/json
+
+{
+  "id": 14,
+  "customerName": "J Ng",
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 2,
+      "unitPrice": 25.00
+    },
+    {
+      "productId": 2,
+      "quantity": 1,
+      "unitPrice": 50.00
+    }
+  ]
+}
+
+
+###
+
+
+DELETE {{E-CommerceWithDTO.API_HostAddress}}/api/order/14
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/category
+
+###
+
+GET {{E-CommerceWithDTO.API_HostAddress}}/api/orderitem
+
+###
