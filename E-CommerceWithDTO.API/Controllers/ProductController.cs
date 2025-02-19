@@ -198,7 +198,7 @@ namespace E_Commerce.API.Controllers
             await _context.SaveChangesAsync();
 
             // Return a JSON response after successful deletion
-            return Ok(new { message = $"Product with ID {id} has been successfully deleted." });
+            return Ok(new { message = $"Product with ID {id} has been successfully delete." });
         }
 
     }
