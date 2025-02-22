@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>E_CommerceWithDTO.API</RootNamespace>
+	<Authors>Joy Ng</Authors>
+	<Copyright>© 2024 Joy Ng. All Rights Reserved.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
